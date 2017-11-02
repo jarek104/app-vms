@@ -14,8 +14,8 @@ th, .navbar {
 .navbar-default .navbar-nav>li>a {
   color: #fff;
 }
-.offset50 {
-  margin-top: 60px;
+.offset100 {
+  margin-top: 100px;
 }
 .search {
   padding: 50px;
