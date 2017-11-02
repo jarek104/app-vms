@@ -1,0 +1,41 @@
+
+<div class="row">
+  <h2>
+    <strong>Windows VMs</strong>
+  </h2>
+  <div class="table-responsive">
+      <table class="table table-hover shadow">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>IP address</th>
+            <th>OS</th>
+            <th>.NET</th>
+            <th>Local build</th>
+            <th>Current User</th>
+            <th>Comments</th>
+            <th>Launcher</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let vm of vms'>
+            <td>{{vm.vmName}}</td>
+            <td>{{vm.vmIP}}</td>
+            <td>{{vm.vmOS}}</td>
+            <td>{{vm.vmDotNet}}</td>
+            <td>{{vm.vmBuildInstalled}}</td>
+            <td>{{vm.vmCurrentUser}}</td>
+            <td>{{vm.vmComment}}</td>
+            <td>
+              <button type="button" class="btn btn-success">RDP</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <button type="button" class="btn btn-info pull-right">
+          Add a new VM
+        </button>
+      </div>
+    </div>
+</div>
