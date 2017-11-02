@@ -7,12 +7,14 @@ import { VmListComponent } from './vm-list.component';
 import { EditVmsComponent } from './edit-vms.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { AddNewVmComponent } from './add-vm.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VmListComponent,
-    EditVmsComponent
+    EditVmsComponent,
+    AddNewVmComponent
   ],
   imports: [
     AlertModule.forRoot(),
